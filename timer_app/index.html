@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Timer App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h1 class="countdown-timer">Meeting Timer App</h1>
+        </div>
+
+        <button class="new-button">
+            <img src="toggle_but.png" alt="Menu" />
+        </button>
+
+        <div class="time-blocks-display">
+            <div class="timer">00:00</div>
+            <div class="timer-subtext">--</div>
+            <div class="time-blocks-container">
+                <div class="heading"><h2>Your time blocks</h2></div>
+                <div class="time-blocks"></div>
+                <button class="add-button">
+                    <img src="Group 629433.png" alt="Add time block" class="add-block-icon" />
+                </button>
+            </div>
+        </div>
+
+        <div class="meetings-display" style="display: none;">
+            <div class="meeting-timer">00:00</div>
+            <div class="meeting-timer-subtext">--</div>
+            <div class="meetings-container">
+                <div class="heading"><h2>Your Meetings</h2></div>
+                <div class="meetings"></div>
+                <button class="add-meeting-button">
+                    <img src="Group 629433.png" alt="Add meeting" class="add-block-icon" />
+                </button>
+            </div>
+        </div>
+
+        <button class="rounded-rectangular-button agenda-button">Add CSV</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

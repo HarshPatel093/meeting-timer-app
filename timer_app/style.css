@@ -1,0 +1,369 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #999999);
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  background: linear-gradient(to bottom, #ffffff, #999999);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menu-icon {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu-icon img {
+  display: block;
+  height: 30px;
+  width: auto;
+}
+
+.countdown-timer {
+  font-family: "Aldrich", sans-serif;
+  font-size: 35px;
+  color: #000;
+  margin: 0;
+  margin-top: 4px;
+  margin-left: -2px;
+}
+
+.timer,
+.meeting-timer {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.time-blocks-container,
+.meetings-container {
+  background: #d9d9d9;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  height: 200px;
+  min-height: 200px;
+  width: 275px;
+  overflow-y: auto;
+}
+
+.heading h2 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.heading h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 123%;
+  height: 2px;
+  background: #000;
+}
+
+.new-button {
+  position: absolute;
+  background-color: transparent; /* Removes any background */
+  margin-top: 180px;
+  margin-bottom: 20px;
+  margin-left: 250px;             /* Adds margin to the left, pushing it to the right */
+  border: none; 
+  cursor: pointer;                 /* Optional: removes the border if you want a flat look */
+}
+
+.time-block-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time-block-row span {
+  flex: 1;
+  text-align: center;
+}
+
+.time-block-row button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.meeting-row {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.meeting-row-highlighted {
+  background-color: #e9ecef; /* Light gray background for highlighted row */
+}
+
+.meeting-name input{
+  width: 50px;
+}
+
+.meeting-link input{
+  width: 30px;
+}
+
+.meeting-name input, .meeting-link input, .meeting-time input {
+  height: 7.5px;
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #A1A1A1;
+}
+
+.meeting-time input[type="datetime-local"] {
+  width: 80px;
+  flex: none; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #A1A1A1;
+}
+
+
+.meeting-row > *:last-child {
+  margin-right: 0;
+}
+
+.meeting-row span {
+  flex: 1;
+  text-align: center;
+}
+
+.meeting-row button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agenda-button,
+.meeting-button {
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.rounded-rectangular-button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+}
+
+.agenda-button,
+.meeting-button {
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+}
+
+.agenda-button {
+  border-radius: 10px;
+}
+
+.meeting-button {
+  border-radius: 10px;
+}
+
+.add-button,
+.add-meeting-button {
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-button .add-block-icon {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.agenda-button:hover,
+.meeting-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.time-block-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.time-block-row span {
+  flex: 1;
+  text-align: center;
+}
+
+.time-block-row button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agenda-button,
+.meeting-button {
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.rounded-rectangular-button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+}
+
+.agenda-button,
+.meeting-button {
+  font-family: "Alata", sans-serif;
+  font-weight: bold;
+}
+
+.agenda-button {
+  border-radius: 10px;
+}
+
+.meeting-button {
+  border-radius: 10px;
+}
+
+.add-button {
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-button .add-block-icon {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.agenda-button:hover,
+.meeting-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.time-block-row {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  gap: 10px; 
+}
+
+.time-block-name input{
+  height: 7.5px;
+  width: 50px;
+  flex: 1; 
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #A1A1A1;
+}
+.time-block-minutes input {
+  height: 7.5px;
+  width: 35px;
+  flex: 1; 
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #A1A1A1;
+}
+
+.time-block-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.time-block-actions button {
+  background: none;
+  border: none;
+  padding: 5px; 
+  cursor: pointer;
+}
+
+.time-block-actions button img {
+  width: 24px; 
+  height: 24px; 
+}
+
+.time-block-row > *:last-child {
+  margin-right: 0;
+}
